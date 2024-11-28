@@ -1,0 +1,40 @@
+﻿@model IEnumerable<FogachoWebHeladeria.Models.AF_Helado>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">Página Principal</h1>
+
+<p class="enlace text-center">
+    <a asp-action="Create">Crear Helado</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.AF_Nombre)</th>
+            <th>@Html.DisplayNameFor(model => model.AF_Sabor)</th>
+            <th>@Html.DisplayNameFor(model => model.AF_Categorias)</th>
+            <th>@Html.DisplayNameFor(model => model.AF_Precio)</th>
+            <th>@Html.DisplayNameFor(model => model.AF_Queso)</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.AF_Nombre)</td>
+                <td>@Html.DisplayFor(modelItem => item.AF_Sabor)</td>
+                <td>@Html.DisplayFor(modelItem => item.AF_Categorias)</td>
+                <td>@Html.DisplayFor(modelItem => item.AF_Precio)</td>
+                <td>@Html.DisplayFor(modelItem => item.AF_Queso)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-warning">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-info">Detalles</a>
+                    <a asp-action="Delete" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

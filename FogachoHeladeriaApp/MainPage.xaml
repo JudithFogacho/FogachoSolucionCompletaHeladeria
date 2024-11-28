@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FogachoHeladeriaApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid>
+                <!-- Título encima de los círculos -->
+                <Label Text="🍨 Fogacho Heladería 🍨"
+                       FontSize="20"
+                       FontFamily="LondrinaSolid"
+                       FontAttributes="Bold"
+                       TextColor="#CF7B89"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start" />
+            </Grid>
+
+            <!-- Lista de Helados -->
+            <VerticalStackLayout Spacing="15">
+                <ListView x:Name="ListView" HeightRequest="400" BackgroundColor="Transparent" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame BackgroundColor="#D2A671"
+                                       CornerRadius="10"
+                                       Padding="10"
+                                       Margin="5">
+                                    <VerticalStackLayout>
+                                        <!-- Categoría del Helado -->
+                                        <Label Text="{Binding AF_Categorias}"
+                                               FontSize="18"
+                                               FontAttributes="Bold"
+                                               TextColor="White" />
+                                        <!-- Sabor -->
+                                        <Label Text="{Binding AF_Sabor}"
+                                               FontSize="16"
+                                               FontAttributes="Bold"
+                                               TextColor="White" />
+                                        <!-- Precio -->
+                                        <Label Text="{Binding AF_Precio, StringFormat='${0:F2}'}"
+                                               FontSize="16"
+                                               FontAttributes="Bold"
+                                               HorizontalOptions="End"
+                                               TextColor="White" />
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+
+            <!-- Botón -->
+            <Button Text="Crear Helado"
+                    WidthRequest="200"
+                    HeightRequest="40"
+                    BackgroundColor="#FFCFD2"
+                    TextColor="#FFF8F2"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

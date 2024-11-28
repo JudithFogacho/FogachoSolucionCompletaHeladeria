@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FogachoWebHeladeria", "FogachoWebHeladeria\FogachoWebHeladeria.csproj", "{71220A03-E95D-45CA-A4F9-B39B56008B3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FogachoHeladosAPI", "FogachoHeladosAPI\FogachoHeladosAPI.csproj", "{5B33D596-89E7-49CC-8923-631CECDE3535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogachoHeladeriaApp", "FogachoHeladeriaApp\FogachoHeladeriaApp.csproj", "{4D3F05DD-8FC2-46EB-92AE-E101CA733FFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71220A03-E95D-45CA-A4F9-B39B56008B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71220A03-E95D-45CA-A4F9-B39B56008B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71220A03-E95D-45CA-A4F9-B39B56008B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71220A03-E95D-45CA-A4F9-B39B56008B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B33D596-89E7-49CC-8923-631CECDE3535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B33D596-89E7-49CC-8923-631CECDE3535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B33D596-89E7-49CC-8923-631CECDE3535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B33D596-89E7-49CC-8923-631CECDE3535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3F05DD-8FC2-46EB-92AE-E101CA733FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3F05DD-8FC2-46EB-92AE-E101CA733FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3F05DD-8FC2-46EB-92AE-E101CA733FFB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4D3F05DD-8FC2-46EB-92AE-E101CA733FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3F05DD-8FC2-46EB-92AE-E101CA733FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3F05DD-8FC2-46EB-92AE-E101CA733FFB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8D5D5F9-808F-409C-A5E6-D15B49ED00E0}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,48 @@
+﻿@model FogachoWebHeladeria.Models.AF_Helado
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>AF_Helado</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AF_Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AF_Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AF_Sabor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AF_Sabor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AF_Categorias)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AF_Categorias)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AF_Precio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AF_Precio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AF_Queso)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AF_Queso)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.AF_IdHeladeria">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

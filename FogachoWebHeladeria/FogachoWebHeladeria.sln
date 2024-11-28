@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FogachoWebHeladeria", "FogachoWebHeladeria.csproj", "{7A134026-963F-4CB8-94D7-851B683294B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogachoHeladeriaAPI", "..\FogachoHeladeriaAPI\FogachoHeladeriaAPI.csproj", "{A99BEEC2-4F16-4B16-8FE8-472862DA96EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A134026-963F-4CB8-94D7-851B683294B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A134026-963F-4CB8-94D7-851B683294B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A134026-963F-4CB8-94D7-851B683294B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A134026-963F-4CB8-94D7-851B683294B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99BEEC2-4F16-4B16-8FE8-472862DA96EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99BEEC2-4F16-4B16-8FE8-472862DA96EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99BEEC2-4F16-4B16-8FE8-472862DA96EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99BEEC2-4F16-4B16-8FE8-472862DA96EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D787AA77-EC08-42A5-91BE-4D3C1F74407E}
+	EndGlobalSection
+EndGlobal
