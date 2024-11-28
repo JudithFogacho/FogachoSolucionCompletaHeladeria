@@ -52,7 +52,7 @@
             </VerticalStackLayout>
 
             <!-- Botón -->
-            <Button Text="Crear Helado"
+            <Button Text="Mostrar Helados"
                     WidthRequest="200"
                     HeightRequest="40"
                     BackgroundColor="#FFCFD2"
