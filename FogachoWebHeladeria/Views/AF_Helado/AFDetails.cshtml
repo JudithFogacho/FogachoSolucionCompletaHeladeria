@@ -1,12 +1,11 @@
 ﻿@model FogachoWebHeladeria.Models.AF_Helado
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "AFDetails";
 }
 
-<h1>Delete</h1>
+<h1>AFDetails</h1>
 
-<h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>AF_Helado</h4>
     <hr />
@@ -42,10 +41,8 @@
             @Html.DisplayFor(model => model.AF_Queso)
         </dd>
     </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="AF_IdHeladeria" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+</div>
+<div>
+    <a asp-action="AFEdit" asp-route-id="@Model?.AF_IdHeladeria">Edit</a> |
+    <a asp-action="AFIndex">Back to List</a>
 </div>

@@ -19,13 +19,13 @@ namespace FogachoWebHeladeria.Controllers
             _context = context;
         }
         // GET: AF_Helado
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> AFIndex()
         {
             return View(await _context.AF_Helado.ToListAsync());
         }
 
         // GET: AF_Helado/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> AFDetails(int? id)
         {
             if (id == null)
             {
@@ -43,7 +43,7 @@ namespace FogachoWebHeladeria.Controllers
         }
 
         // GET: AF_Helado/Create
-        public IActionResult Create()
+        public IActionResult AFCreate()
         {
             return View();
         }
@@ -53,19 +53,19 @@ namespace FogachoWebHeladeria.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AF_IdHeladeria,AF_Nombre,AF_Sabor,AF_Categorias,AF_Precio,AF_Queso")] AF_Helado aF_Helado)
+        public async Task<IActionResult> AFCreate([Bind("AF_IdHeladeria,AF_Nombre,AF_Sabor,AF_Categorias,AF_Precio,AF_Queso")] AF_Helado aF_Helado)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(aF_Helado);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(AFIndex));
             }
             return View(aF_Helado);
         }
 
         // GET: AF_Helado/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> AFEdit(int? id)
         {
             if (id == null)
             {
@@ -85,7 +85,7 @@ namespace FogachoWebHeladeria.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AF_IdHeladeria,AF_Nombre,AF_Sabor,AF_Categorias,AF_Precio,AF_Queso")] AF_Helado aF_Helado)
+        public async Task<IActionResult> AFEdit(int id, [Bind("AF_IdHeladeria,AF_Nombre,AF_Sabor,AF_Categorias,AF_Precio,AF_Queso")] AF_Helado aF_Helado)
         {
             if (id != aF_Helado.AF_IdHeladeria)
             {
@@ -110,13 +110,13 @@ namespace FogachoWebHeladeria.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(AFIndex));
             }
             return View(aF_Helado);
         }
 
         // GET: AF_Helado/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> AFDelete(int? id)
         {
             if (id == null)
             {
@@ -134,7 +134,7 @@ namespace FogachoWebHeladeria.Controllers
         }
 
         // POST: AF_Helado/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("AFDelete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -145,7 +145,7 @@ namespace FogachoWebHeladeria.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(AFIndex));
         }
 
         private bool AF_HeladoExists(int id)

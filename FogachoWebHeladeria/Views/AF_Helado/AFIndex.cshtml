@@ -1,12 +1,12 @@
 ﻿@model IEnumerable<FogachoWebHeladeria.Models.AF_Helado>
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "AFIndex";
 }
 
 <h1 class="text-center">Página Principal</h1>
 
 <p class="enlace text-center">
-    <a asp-action="Create">Crear Helado</a>
+    <a asp-action="AFCreate">Crear Helado</a>
 </p>
 
 <table class="table">
@@ -30,9 +30,9 @@
                 <td>@Html.DisplayFor(modelItem => item.AF_Precio)</td>
                 <td>@Html.DisplayFor(modelItem => item.AF_Queso)</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-warning">Editar</a>
-                    <a asp-action="Details" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-info">Detalles</a>
-                    <a asp-action="Delete" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-danger">Eliminar</a>
+                    <a asp-action="AFEdit" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-warning">Editar</a>
+                    <a asp-action="AFDetails" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-info">Detalles</a>
+                    <a asp-action="AFDelete" asp-route-id="@item.AF_IdHeladeria" class="btn btn-sm btn-danger">Eliminar</a>
                 </td>
             </tr>
         }

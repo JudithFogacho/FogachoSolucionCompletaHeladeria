@@ -27,6 +27,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=AF_Helado}/{action=Index}/{id?}");
+    pattern: "{controller=AF_Helado}/{action=AFIndex}/{id?}");
 
 app.Run();
