@@ -2,11 +2,11 @@
 using Newtonsoft.Json;
 namespace FogachoHeladeriaApp
 {
-    public partial class MainPage : ContentPage
+    public partial class AFMainPage : ContentPage
     {
         int count = 0;
 
-        public MainPage()
+        public AFMainPage()
         {
             InitializeComponent();
         }

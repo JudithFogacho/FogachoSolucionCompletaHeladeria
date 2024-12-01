@@ -11,7 +11,7 @@ namespace FogachoHeladeriaApp
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("LondrinaSolid-Regular.ttf", "LondrinaSolid");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
