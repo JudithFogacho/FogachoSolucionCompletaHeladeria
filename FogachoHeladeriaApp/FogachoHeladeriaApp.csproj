@@ -72,6 +72,9 @@
 	  <Compile Update="AFMainPage.xaml.cs">
 	    <DependentUpon>AFMainPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="AFApp.xaml.cs">
+	    <DependentUpon>AFApp.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

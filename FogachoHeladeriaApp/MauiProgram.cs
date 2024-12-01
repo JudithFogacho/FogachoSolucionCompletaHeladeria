@@ -8,7 +8,7 @@ namespace FogachoHeladeriaApp
         {
             var builder = MauiApp.CreateBuilder();
             builder
-                .UseMauiApp<App>()
+                .UseMauiApp<AFApp>()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("LondrinaSolid-Regular.ttf", "LondrinaSolid");

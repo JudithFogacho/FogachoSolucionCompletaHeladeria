@@ -1,8 +1,8 @@
 ﻿namespace FogachoHeladeriaApp
 {
-    public partial class App : Application
+    public partial class AFApp : Application
     {
-        public App()
+        public AFApp()
         {
             InitializeComponent();
 

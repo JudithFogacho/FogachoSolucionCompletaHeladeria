@@ -27,6 +27,11 @@
                                        Padding="10"
                                        Margin="5">
                                     <VerticalStackLayout>
+                                        <!--Nombre del Helado-->
+                                        <Label Text="{Binding AF_Nombre}"
+                                               FontSize="22"
+                                               FontAttributes="Bold"
+                                               TextColor="White" />
                                         <!-- Categoría del Helado -->
                                         <Label Text="{Binding AF_Categorias}"
                                                FontSize="18"
