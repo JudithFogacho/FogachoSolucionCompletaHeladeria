@@ -75,6 +75,9 @@
 	  <Compile Update="AFApp.xaml.cs">
 	    <DependentUpon>AFApp.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="AFAppShell.xaml.cs">
+	    <DependentUpon>AFAppShell.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

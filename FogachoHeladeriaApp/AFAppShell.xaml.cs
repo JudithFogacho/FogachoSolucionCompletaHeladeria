@@ -1,8 +1,8 @@
 ﻿namespace FogachoHeladeriaApp
 {
-    public partial class AppShell : Shell
+    public partial class AFAppShell : Shell
     {
-        public AppShell()
+        public AFAppShell()
         {
             InitializeComponent();
         }
