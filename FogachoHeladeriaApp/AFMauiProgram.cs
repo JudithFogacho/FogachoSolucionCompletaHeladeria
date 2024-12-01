@@ -2,7 +2,7 @@
 
 namespace FogachoHeladeriaApp
 {
-    public static class MauiProgram
+    public static class AFMauiProgram
     {
         public static MauiApp CreateMauiApp()
         {
